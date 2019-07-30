@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" href="index.css"/>
 
     <!-- Linked Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400|Roboto&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png"/>
@@ -26,7 +27,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
         <div class="container">
                 <a class="navbar-brand" href="#">
-                  <img src="images/LogoColorWtTxt.png" width="250px" height="80px">
+                  <img src="images/LogoColorWtTxt.png" width="275px" height="80px">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -77,10 +78,8 @@
     <!-- Mission Section -->
 
     <section id="mission" class="bg-l">
-        <div class="container">
-            <div class="content text-center">
-                <h1>Mission</h1>
-            </div>
+        <div class="container text-center content">
+          <h1 class="header">Mission</h1>
         </div>
     </section>
 
@@ -91,7 +90,7 @@
     <section id="recieving_food" class="bg-d">
         <div class="container">
             <div class="content text-center">
-                <h1>Recieving Food</h1>
+                <h1 class="header">Receiving Food</h1>
                 <div class="row extra_padding">
                   <div class="col-xs-12 col-md-6">
                       <p class="column_header">Necessary Documentation<p>
@@ -103,6 +102,7 @@
                   </div>
                 </div>
                 <p class="column_header extra_padding">Our Service Region</p>
+                <p>Patrons must have a permanent address within our service region to qualify.</p>
 
                 <div class="mx-auto" id="map"></div>
 
@@ -196,7 +196,7 @@
 
     <section id="giving" class="bg-l">
       <div class="container content text-center extra_padding">
-        <h1>Looking For Ways to Give Back?</h1>
+        <h1 class="header">Looking For Ways to Give Back?</h1>
         <p class="extra_padding">We're looking for donations of fresh garden produce from your excess. Most of our clients don't have gardens and it is 
           a great blessing for them to get fresh produce. Donations can be dropped of during our regular pantry hours - Mon 3-6 pm 
           and Wed and Fri from 9 am to noon. Thanks so much for considering LTN pantry!
@@ -239,7 +239,7 @@
 
     <section id="events" class="bg-d filler">
       <div class="container content text-center extra_padding">
-        <h1>Upcoming Events</h1>
+        <h1 class="header">Upcoming Events</h1>
         <!-- TODO: Google Calendar for upcoming events -->
       </div>
     </section>
@@ -250,7 +250,7 @@
 
     <section id="contact" class="bg-l extra_paddingB">
       <div class="container content text-center extra_padding">
-        <h1>Contact</h1>
+        <h1 class="header">Contact</h1>
           <p class="extra_padding">
               Hours<br><br>
               Monday: 3pm - 6pm<br>
@@ -258,28 +258,37 @@
               Friday: 9am - 12pm<br>
           </p>
         <p>If you have any questions or concerns please feel free to give us a call or email us with the form below.</p>
-
-        <form method="POST" action="email.php">
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+        <div class="row">
+          <div class="col-xs-12 col-md-9">
+            <form method="POST" action="email.php">
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
               <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
               </div>
-            </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="4"></textarea>
+          <div class="info col-xs-12 col-md-3">
+            <p>Love Thy Neighbor Ministries<p>
+            <p><a href="tel:+12697192422">(269) 719-2422</a></p>
+            <p>1391 East Michigan, Battle Creek MI</p>
+            <p><a href="mailto:info@bclovethyneighbor.org">info@bclovethyneighbor.org</a></p>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
       </div>
     </section>
 
