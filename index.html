@@ -14,45 +14,50 @@
     <!-- Linked Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400|Roboto&display=swap" rel="stylesheet">  
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png"/>
+
     <title>Love Thy Neighbor Ministries</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="100">
     
     <!-- Navigation Bar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Love Thy Neighbor</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mission</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Recieving Food</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Giving Back</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <div class="container">
+                <a class="navbar-brand" href="#">
+                  <img src="images/LogoColorWtTxt.png" width="250px" height="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mission">Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recieving_food">Recieving Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#giving">Giving Back</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
         </div>
       </nav>
 
     <!-- End Navigation Bar -->
-
-
 
     <!-- Banner Section -->
 
@@ -71,7 +76,7 @@
 
     <!-- Mission Section -->
 
-    <section class="bg-l">
+    <section id="mission" class="bg-l">
         <div class="container">
             <div class="content text-center">
                 <h1>Mission</h1>
@@ -83,18 +88,199 @@
 
     <!-- Recieving Food Section -->
 
-    <section class="bg-d">
+    <section id="recieving_food" class="bg-d">
         <div class="container">
             <div class="content text-center">
                 <h1>Recieving Food</h1>
-                <div class="col-xs-12 col-md-6">
-                    <h3>Necessary Documentation</h3>
+                <div class="row extra_padding">
+                  <div class="col-xs-12 col-md-6">
+                      <p class="column_header">Necessary Documentation<p>
+                      <p>Patrons need to bring documentation proving their current address and identifications (a Drivers License, a Social Security Card or a bill showing your name and address).</p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                      <p class="column_header">Once Every 30 Days<p>
+                      <p>Patrons are only allowed to use our services once every 30 days. If more frequent assistance is required, contact 211 for a referral.</p>
+                  </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
-                    <h3>Once Every 30 Days</h3>
+                <p class="column_header extra_padding">Our Service Region</p>
+
+                <div class="mx-auto" id="map"></div>
+
+                <p class="column_header extra_padding">FAQ</p>
+
+                <div class="accordion" id="accordionExample">
+
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          What food can I expect?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        We carry most staple food items such as meat and bread as well as necessities such as soap and toilet paper.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Is there any delivery assitance?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Unfortunately not at this time.                      
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Does it cost anything?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                        There is no cost involved as long as you qualify.                      
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Do I have to go through 211?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Going through 211 is not necessary, though if you live outside our coverage area 211 can refer you based on your individual needs.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          Can I volunteer?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Yes absolutely! Feel free to call or email to express your interest and look below for more ways to get involved.
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-            </div>
+            </div>            
+          </div>
+    </section>
+
+    <!-- End Recieving Food Section -->
+
+    <!-- Giving Back Section -->
+
+    <section id="giving" class="bg-l">
+      <div class="container content text-center extra_padding">
+        <h1>Looking For Ways to Give Back?</h1>
+        <p class="extra_padding">We're looking for donations of fresh garden produce from your excess. Most of our clients don't have gardens and it is 
+          a great blessing for them to get fresh produce. Donations can be dropped of during our regular pantry hours - Mon 3-6 pm 
+          and Wed and Fri from 9 am to noon. Thanks so much for considering LTN pantry!
+        </p>
+        <div class="row extra_padding">
+          <div class="col-xs-12 col-md-6">
+            <p class="column_header">Give Financially</p>
+            <p>
+              Battle Creek Community Foundation<br>
+              32 West Michigan Avenue<br>
+              Suite Number 1<br>
+              Battle Creek Michigan 49017<br>
+              Designate "Love Thy Neighbor Community Fund"<br>
+            </p>
+            <p>
+              Food Bank of South Central Michigan<br>
+              P.O. Box 408<br>
+              Battle Creek MI 49016-0408<br>
+              Designate "Love Thy Neighbor Food Pantry"<br>
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <p class="column_header">Other Ways to Give</p>
+            <p>
+                Volunteer time for various needs and projects<br>
+                Nonperishable food items<br>
+                Fresh produce from your garden<br>
+                Brown paper bags (50-70lb)<br>
+                Plastic grocery bags<br>
+                Christian books, CD's and videos<br>
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- End Giving Back Section -->
+
+    <!-- Upcoming Events Section -->
+
+    <section id="events" class="bg-d filler">
+      <div class="container content text-center extra_padding">
+        <h1>Upcoming Events</h1>
+        <!-- TODO: Google Calendar for upcoming events -->
+      </div>
+    </section>
+
+    <!-- End Upcoming Events Section -->
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="bg-l extra_paddingB">
+      <div class="container content text-center extra_padding">
+        <h1>Contact</h1>
+          <p class="extra_padding">
+              Hours<br><br>
+              Monday: 3pm - 6pm<br>
+              Wednesday: 9am - 12pm<br>
+              Friday: 9am - 12pm<br>
+          </p>
+        <p>If you have any questions or concerns please feel free to give us a call or email us with the form below.</p>
+
+        <form method="POST" action="email.php">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </section>
 
     <!-- Optional JavaScript -->
@@ -102,5 +288,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5L0D5Hc9knZf7fPoad4SudZww7zz3gbY&libraries=places,geometry&callback=initMap" async defer></script>
+    <script src="index.js"></script>
+
   </body>
 </html>

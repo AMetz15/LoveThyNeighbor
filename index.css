@@ -4,21 +4,43 @@ CSS File for the main page (index.html)
 
 1. Page CSS
 - CSS for use on the entire page
-
-2. Banner CSS
-- CSS for the banner section of the page
--Font Usage
+- Font Usage
   - Roboto: font-family: 'Roboto', sans-serif;
   - Dancing Script: font-family: 'Dancing Script', cursive;
 
+2. Banner CSS
+- CSS for the banner section of the page
+
+3. Mission CSS
+- CSS for the mission section of the page
+
+4. Recieving Food CSS
+- CSS for the recieving food section of the page
 
 ------------------------------------------------------- */ 
 
 /* Page CSS */
 
+body {
+  position: relative;
+}
+
 .content {
   font-family: 'Roboto', sans-serif;
-  padding: 2em;
+  padding: 3em;
+}
+
+.column_header {
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.navbar ul {
+  padding: 1.5em;
 }
 
 /* Light background */
@@ -33,6 +55,17 @@ CSS File for the main page (index.html)
   color: #dedede;
 }
 
+.extra_padding {
+  padding: 2em;
+}
+
+.extra_paddingB {
+  padding-bottom: 2em;
+}
+
+.filler {
+  height: 80vh;
+}
 
 /* Banner CSS */
 .parallax { 
@@ -40,7 +73,7 @@ CSS File for the main page (index.html)
     background-image: url("images/berriesresizeblur.jpg");
   
     /* Set a specific height */
-    height: 60vh; 
+    height: 80vh; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -61,4 +94,19 @@ CSS File for the main page (index.html)
   font-style: italic;
   font-family: 'Dancing Script', cursive;
   text-align: center;
+}
+
+/* Mission CSS */
+
+
+
+/* Recieving Food CSS */
+
+#map {
+  width: 65%;
+  height: 25em;
+}
+
+.accordion .card-body {
+  color: black;
 }
