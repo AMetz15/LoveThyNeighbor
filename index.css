@@ -104,7 +104,10 @@ body {
 
 /* Mission CSS */
 
-
+/* Upcoming Events */
+#events {
+  height: 80vh;
+}
 
 /* Receiving Food CSS */
 
