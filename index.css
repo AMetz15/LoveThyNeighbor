@@ -113,6 +113,12 @@ body {
 
 /* Receiving Food CSS */
 
+#pac-input {
+font-size: 20px;
+padding: 10px;
+margin: 8px;
+}
+
 #map {
   width: 65%;
   height: 25em;
