@@ -134,7 +134,11 @@ margin: 8px;
   border-left: #706b67 solid;
   padding-top: 5%;
 }
-img{
-width: 750px;
-height: auto;
+
+.banner-img{
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
