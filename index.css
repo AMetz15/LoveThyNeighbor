@@ -142,3 +142,11 @@ margin: 8px;
   margin-right: auto;
   width: 70%;
 }
+
+/* IE Specific Styling */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* Rotates the volunteer picture 180 degrees */
+  .banner-img {
+    transform: rotate(180deg);
+  }
+}
