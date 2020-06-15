@@ -150,3 +150,15 @@ margin: 8px;
     transform: rotate(180deg);
   }
 }
+
+@media not all and (min-resolution:.001dpcm) { 
+    
+        .safari10 { 
+            
+            width: 750px;
+            height: auto;
+
+          }
+        }
+    
+
