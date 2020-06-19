@@ -153,7 +153,7 @@ margin: 8px;
 
 @media not all and (min-resolution:.001dpcm) { 
     
-        .safari10 { 
+        .banner-img { 
             
             width: 750px;
             height: auto;
