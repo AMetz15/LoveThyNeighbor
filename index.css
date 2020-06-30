@@ -135,30 +135,14 @@ margin: 8px;
   padding-top: 5%;
 }
 
-.banner-img{
+/* .banner-img{
   display: block;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-}
+} */
 
-/* IE Specific Styling */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* Rotates the volunteer picture 180 degrees */
-  .banner-img {
-    transform: rotate(180deg);
-  }
-}
 
-@media not all and (min-resolution:.001dpcm) { 
-    
-        .banner-img { 
-            
-            width: 750px;
-            height: auto;
-
-          }
-        }
     
 
